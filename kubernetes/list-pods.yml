@@ -6,7 +6,7 @@
     - name: List Pods in namespace
       k8s_info:
         kind: Pod
-        namespace: kube-system
+        namespace: pipeline-tutorial
       register: kube_system_pods_list
     - name: Show the list of pods
       debug:
